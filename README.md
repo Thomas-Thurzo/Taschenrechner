@@ -1,3 +1,4 @@
-# MiniSiteTemplate
+# Taschenrechner
 
-Website Template für JavaScript Projekte.
+Ein einfacher aber hübscher Taschenrechner. 
+Eine JavaScript Coding Übung.

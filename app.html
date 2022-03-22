@@ -3,7 +3,7 @@
 <html lang="de" class="h-100">
 
 <head>
-    <title>App Name</title>
+    <title>Taschenrechner</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,7 +27,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">APP NAME</a>
+        <a class="navbar-brand" href="#">Taschenrechner</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,10 +55,42 @@
     </nav>
 
     <!-- Main Sektion -->
-    <main class="flex-shrink-0">
-        <div class="container">
-
+    <main class="container m-auto p-1">  
+        <div id="ergebnisArea">
+            
         </div>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td onclick="deleteLast()">BACK</td>
+                <td onclick="deleteAll()">DEL</td>
+            </tr>
+            <tr>
+                <td onclick="appendFunktion(7)">7</td>
+                <td onclick="appendFunktion(8)">8</td>
+                <td onclick="appendFunktion(9)">9</td>
+                <td onclick="appendFunktion('/')" class="operatoren">/</td>
+            </tr>
+            <tr>
+                <td onclick="appendFunktion(4)">4</td>
+                <td onclick="appendFunktion(5)">5</td>
+                <td onclick="appendFunktion(6)">6</td>
+                <td onclick="appendFunktion('*')" class="operatoren">X</td>
+            </tr>
+            <tr>
+                <td onclick="appendFunktion(1)">1</td>
+                <td onclick="appendFunktion(2)">2</td>
+                <td onclick="appendFunktion(3)">3</td>
+                <td onclick="appendFunktion('-')" class="operatoren">-</td>
+            </tr>
+            <tr>
+                <td onclick="appendFunktion(0)">0</td>
+                <td onclick="appendFunktion('.')">.</td>
+                <td onclick="berechnen()" id="istGleich">=</td>
+                <td onclick="appendFunktion('+')" class="operatoren">+</td>
+            </tr>
+        </table>
     </main>
 
     <!-- Footer -->
